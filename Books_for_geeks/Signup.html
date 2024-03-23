@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="signc.css">
+    <title>books website</title>
+</head>
+<body>
+
+    
+    
+<div class="parent-container">
+  <!-- Your content here -->
+</div>
+
+<div class="overlay">
+    <div class="dialog-box">
+      <h2>Sign Up / Register</h2>
+      <form>
+      <!-- <form method="post" action="process_form.php"> -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <!-- <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required> -->
+
+        <label for="Age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        
+        <label for="Course">Course:</label>
+        <input type="text" id="course" name="course" >
+
+        <label for="Interest">Interest:</label>
+        <input type="text" id="interest" name="interest" required>
+
+        <label for=Designation>Designation:</label>
+        <select id=options name="designation" onchange="handleOptionChange()">
+          <option value="Student">Student</option>
+          <option value="Teacher">Teacher</option>
+          <option value="Homemaker">Homemaker</option>
+          <!-- <option value="Job profile">Job profile</option> -->
+          <option value="option2">Others</option> 
+
+        </select> 
+
+        <div id="inputContainer" style="display: none;">
+          <label for="userInput">Enter your designation:</label>
+          <input type="text" id="userInput">
+      </div> 
+
+
+       
+
+        
+        <!-- <button type="submit">Sign Up</button>  -->
+        <a class="link-button1" href="index.html" target="_blank">
+
+        <button type="button" id="signup-button">Sign Up</button> 
+
+        </a>
+        <!-- <button type="submit" id="signup-button" disabled>Sign Up</button> -->
+
+        <a class="link-button2" href="http://127.0.0.1:5500/index.html" target="_blank">Continue as Guest</a>
+        <!-- <button type="button" class="guest-button">Continue as Guest</button> -->
+      </form>
+    </div>
+  </div> 
+
+  <script>
+
+    function handleOptionChange() {
+        var select = document.getElementById("options");
+        var selectedOption = select.value;
+    
+        var inputContainer = document.getElementById("inputContainer");
+    
+        if (selectedOption === "option2") {
+            inputContainer.style.display = "block";
+        } else {
+            inputContainer.style.display = "none";
+        }
+    } 
+
+     
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        const signupButton = document.getElementById("signup-button");
+        signupButton.addEventListener("click", validateAndNavigate);
+    });
+    
+    function validateAndNavigate() {
+        const username = document.getElementById("username").value;
+        const email = document.getElementById("email").value;
+        const  age= document.getElementById("age").value;
+        const course = document.getElementById("course").value;
+        const interest = document.getElementById("interest").value;
+        const options = document.getElementById("options").value;
+        
+
+        // const password = document.getElementById("password").value;
+    
+        if (username !== "" && email !== "" && age !== ""  && interest!== ""  && options!== "" ) {
+            // All fields are filled, navigate to another page
+            window.location.href = "index.html"; // Replace with your desired URL
+        } else {
+            alert("Please fill in all the required fields.");
+            window.location.href = "Signup.html";
+        } 
+
+      }
+    
+
+    
+    </script> 
+
+
+
+</body>
+</html>

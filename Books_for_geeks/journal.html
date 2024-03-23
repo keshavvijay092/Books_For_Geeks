@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Day Journal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #55148a48;
+        }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: rgba(123, 99, 231, 0.918);
+            height: 100%;
+            position: fixed;
+        }
+        
+        .sidebar a {
+            padding: 20px;
+            text-decoration: none;
+            color: beige;
+            display: block;
+        }
+        
+        .sidebar a:hover {
+            background-color: #176ed1;
+        }
+        
+        .main {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        
+        #journal-entry {
+            border: none;
+            background-color: rgba(255, 255, 255, 0.8);
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+        #submit-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="https://dayoneapp.com/blog/journal-writing/#:~:text=Journal%20writing%20is%20the%20practice,%2C%20or%20semi%2Dprivate%20format.">Guide for Beginners</a>
+        <a href="https://quixy.com/blog/50-bullet-journal-ideas-for-beginners/">Ideas</a>
+        <a href="https://www.sciencedirect.com/journal/journal-of-business-research">Journal of Business Research</a>
+    </div>
+    <div class="main">
+        <h1>My Day Journal</h1>
+        <p>Hey, tell me how was your day?</p>
+        <textarea id="journal-entry" placeholder="Dear Diary..."></textarea>
+        <button id="submit-button">Submit</button>
+    </div>
+    <script>
+        document.getElementById('submit-button').addEventListener('click', function() {
+            alert('Thanks for writing today. See you next time!');
+        });
+    </script>
+</body>
+</html>

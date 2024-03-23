@@ -1,0 +1,640 @@
+
+ 
+ 
+    /* Reset some default styles and provide basic styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    /* background-color: #f9f9f9;
+    color: #333; */
+    
+    /* overflow: hidden; */
+    } 
+
+    body {
+        background-color: #D9AFD9;
+        background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);  /* Replace with your desired background color */
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+        height: 100%; /* Ensure the body takes up the full viewport height */
+    } 
+
+    
+
+    
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    margin: auto;
+    /* overflow: hidden; */
+    }
+    
+    .site-header {
+    background-color:white;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    }
+    
+    .main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    }
+    
+    .main-nav li {
+    margin-right: 20px;
+    }
+    
+    .main-nav a {
+    text-decoration: none;
+    color: #1a1818;
+    }
+    
+    .main-nav a:hover {
+    text-decoration: underline;
+    }
+    
+    .logo img {
+    max-width: 100px; /* Adjust the logo's width as needed */
+    padding-right: 41rem;
+    padding-top: 0rem;
+    } 
+    
+    
+    /* contact us  */
+    
+    
+    
+    
+    
+    
+    .menu{
+    display: none;
+    position: absolute;
+    background-color: #1b1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    top: 40px;
+    right: 10px;
+    z-index: 1000;
+    margin-top: 7px;
+    
+    width: 8%;
+    
+    border-radius: 5px;
+    margin-left: 1350px; 
+    
+    
+    }
+    
+    .menu.active {
+    left: 0;
+    }
+    
+    .menu-item {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #f1efef;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .menu-icon{
+    flex-direction: column;
+    height: 5rem;
+    width: 2rem;
+    } 
+    
+    .menu-content.show {
+    display: block;
+    }
+    }
+    
+    
+    
+    .menu-icon {
+    position: absolute;
+    top: 20px;
+    height: 3rem;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+    flex-direction: column;
+    }
+    
+    .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+    .menu-icon {
+    display: block;
+    }
+    
+    .menu {
+    width: 15%;
+    height: 20%;
+    /* right: -100%; */
+    padding: 20px;
+    margin-top: 1rem;
+    margin-left: 100px;
+    
+    
+    }
+    }
+    
+    
+    @media screen and (max-width: 1768px) {
+    .menu-icon {
+    display: flex;
+    }
+    
+    .menu {
+    display: none;
+    }
+    
+    .menu.active {
+    display: block;
+    }
+    }
+    
+    
+    
+    
+    /* Additional styling as needed */
+    
+    
+    
+    /* Additional styling as needed */
+    
+    /* slideshow  */
+    /* Style for the slideshow container */
+    .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    object-fit: contain;
+
+    /* height: 5rem; */
+    
+    
+    }
+    .black-side {
+    flex: 1;
+    background-color: black;
+    }
+    
+    /* Style for individual slides */
+    .slide {
+    display: none;
+    box-shadow:black;
+    }
+    
+    /* Style for slide images */
+    .slide img {
+    width: 100%;
+    height: 29rem;
+    object-fit:fill;
+    }
+    
+    /* Style for text overlay */
+    .text {
+    position: absolute;
+    top: 95%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.952);
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 24px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    
+    
+    }
+    
+    /* Style for navigation buttons */
+    .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    cursor: pointer;
+    font-size: 40px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    color: #fff;
+    }
+    
+    .prev {
+    left: 0;
+    }
+    
+    .next {
+    right: 0;
+    }
+    
+    /* Style for dots */
+    .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    }
+    
+    /* Active dot style */
+    .active {
+    background-color:black;
+    }
+    
+    /* search bar  */
+    /* styles.css */
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+    
+    .search-container {
+    max-width: 100%;
+    margin: 50px 10px;
+    text-align: center;
+    background-color:#ded0ee;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    
+    input[type="text"] {
+    width: 100%;
+    margin-right :10px;
+    margin-left: 0px;
+    padding: 7px;
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 3px;
+    }
+    
+    /* Style for the box */
+
+    .box-container {
+        display: flex;
+        justify-content: space-between; /* Adjust as needed */
+    }
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    margin: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the anchor tag inside the box */
+.box a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+} 
+
+.box:hover {
+    cursor: pointer;
+    background-color:hotpink;
+    border-color: red;
+
+}
+
+    
+    
+    button {
+    padding: 10px 20px;
+    background-color:#b31500e7;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    }
+    
+    button:hover {
+    background-color:  #ff0000e0;
+    } 
+
+   /* Styles for the popup */
+
+
+    /* top 10 of the bestseller */
+    .best-sellers {
+        text-align: center;
+        margin: 20px auto;
+    }
+    
+    .best-sellers-heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .image-container {
+        display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        
+        
+    }
+    
+    .image-container img {
+        /* width: px; */
+        height: 9rem;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+        width: 50%;        
+        margin-right: 70px;
+    }
+    
+    .arrow-button {
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    } 
+
+    .top-picks{ 
+        text-align: center;
+        margin: 20px auto;
+
+    } 
+     .top-picks-heading{ 
+
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+
+     } 
+     .books-container{
+     display: flex;
+     justify-content: space-between;
+     overflow: hidden;
+    } 
+
+    .books-container img{
+        height: 9rem;
+        width: 130px;
+        margin: 20px 10px;
+        transition: transform 0.3s ease;
+        margin-right: 70px;
+    } 
+
+   
+    /* pinterest */
+    /* Apply styles to iframe containers */
+/* Reset default margin and padding */
+
+
+/* Style the container for the iframes */
+   /* Style for the iframe element */
+   /* body, main, iframe {
+    margin: 0;
+    padding: 0;
+} */
+.iframe-container {
+    display: flex; /* Use flexbox to arrange iframes side by side */
+    justify-content: space-between; /* Add space between iframes */
+    align-items: center; /* Center vertically within the container */
+}
+
+/* Style for each iframe */
+iframe {
+    width: 50%; /* Adjust the width as needed to fit your layout */
+    height: 900px; /* Set a fixed height or adjust as needed */
+    border: 1px ; /* Add a border for separation */
+}
+
+
+
+
+    
+    /* quotes */
+    /* Add your CSS styles here */
+
+    .quote-heading {
+        text-align: center; /* Center-align the text */
+        font-size: 28px; /* Adjust the font size as needed */
+        color: #333; /* Set the text color */
+        font-weight: bold; /* Make the text bold */
+        margin-top: 20px; /* Add some top margin for spacing */
+        text-transform: uppercase; /* Transform text to uppercase */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    }
+    .quote-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width:100%;
+        margin: 0 1px;
+        padding: 20px;
+    }
+    
+    .quote-box {
+        /* width: calc(50% - 10px); */
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        cursor: pointer;
+        /* transition: background-color 0.3s ease; */
+        display:flex;
+        background-color:white;
+    }
+    
+    .quote-box:hover {
+        background-color:#2db11209;
+        cursor: pointer;
+    }
+    
+    .quote-text {
+        float: left;
+        width: 70%;
+        text-align: center;
+    }
+    
+    .quote-image {
+        float: right;
+        width: 30%;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* blogs  */
+    /* Reset default margin and padding */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Style the entire blog section */
+
+.blog-heading {
+    font-size: 40px;
+    font-weight: bold;
+    color: #0e0f0f;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    box-shadow: #333;
+
+}
+
+    .blog-row {
+        display: flex; /* Use flexbox to arrange blogs side by side */
+        justify-content: space-between; /* Add space between the blogs */
+        max-width: 1300px; /* Set a maximum width for the row */
+        margin: 0 auto; /* Center-align the row on the page */
+    }
+    
+
+
+/* Style individual blog posts */
+.blog-post { 
+    flex:1;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Style blog post images */
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Style blog post titles */
+.blog-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style blog post content */
+.blog-content {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Style blog post metadata */
+.blog-meta {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+} 
+
+.blog-post:hover {
+    background-color:#fc0a0a09;
+    cursor: pointer;
+}
+
+/* Style read more links */
+.read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #555;
+}  
+
+  /* Styles for the journal section */
+.journal-section {
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    background:rgb(180, 226, 226);
+    height: 200px;
+    
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 5px;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+textarea {
+    width: 95%;
+    height: 100px;
+    margin-top: -3px;
+    padding: 10px;
+    resize: none;
+}
+
+button {
+    /* margin-top: 10px; */
+    /* padding: 10px 20px; */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+
+    footer {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    } 
